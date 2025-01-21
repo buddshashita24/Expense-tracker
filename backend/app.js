@@ -10,7 +10,7 @@ const app = express();
 //connect to mongodb
 mongoose.connect("mongodb://localhost:27017/mern-tracker").then(() => console.log("Connected to MongoDB")).catch((err) => console.log(err))
 const corsOptions={
-  origin: "http://localhost:5173"
+  origin: "https://expense-tracker-beige-mu-87.vercel.app"
 }
 app.use(cors(corsOptions))
 

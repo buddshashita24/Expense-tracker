@@ -49,7 +49,7 @@ const usersController = {
                     }
                     //! Generate a token
                     const token = jwt.sign({ id: user._id }, "expensetracker", {
-                      expiresIn: "30d",
+                      expiresIn: "7d",
                     });
 
                     //!Send the response
